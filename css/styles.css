@@ -167,7 +167,8 @@ img {
 /* Hero */
 
 .hero {
-  max-width: 1440px;
+  /*max-width: 1440px;*/
+  width: 320px;
   background-color: #2e2f42;
   /*padding: 188px 0;*/
   padding: 72px 0;
@@ -176,10 +177,21 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-img.jpg);
+    url(../images/hero-image-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(
+     	 		rgba(46, 47, 66, 0.7),
+     			 rgba(46, 47, 66, 0.7)
+    			),
+   			 url(../images/hero-image-mob2x.jpg);
+   	}
 }
 
 .title {
