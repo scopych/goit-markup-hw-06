@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <!--   <header class="header">
+    <header class="header">
       <div class="container header-wrap">
         <nav class="navigation">
           <a href="./index.html" class="logo"
@@ -54,7 +54,91 @@
             </li>
           </ul>
         </address>
-      </div>
+
+        <button type="button" class="header-menu-btn">
+        		<svg class="header-menu-icon" width="24" height="24">
+            		<use href="./images/icons.svg#icon-header-menu-btn"></use>
+          	</svg>
+        	</button>
+       </div>   <!-- div container -->
+
+
+      <div class="mob-menu">
+      	<div>
+      	 <button type="button" class="mob-menu-btn">
+        		<svg class="mob-menu-icon" width="8" height="8">
+            		<use href="./images/icons.svg#icon-close-black-18dp"></use>
+          	</svg>
+        	</button>
+
+
+        	<nav class="mobmenu-navigation">
+        	<ul class="mobmenu-navigation-links">
+            <li>
+              <a
+                href="./index.html"
+                class="mobmenu-navigation-link mobmenu-studio-link"
+                >Studio</a
+              >
+            </li>
+            <li><a href="" class="mobmenu-navigation-link">Portfolio</a></li>
+            <li><a href="" class="mobmenu-navigation-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="mobmenu-addr">
+          <ul class="mobmenu-addr-items">
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobmenu-contacts-links mobmenu-mail-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="mobmenu-contacts-links"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        </div>
+
+        <div class="mobmenu-social">
+
+          <ul class="mobmenu-social-icons">
+            <li class="mobmenu-social-icons-item">
+              <a class="mobmenu-social-link" href="" target="_blank"
+                ><svg class="mobmenu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-social-icons-item">
+              <a class="mobmenu-social-link" href="" target="_blank"
+                ><svg class="mobmenu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-social-icons-item">
+              <a class="mobmenu-social-link" href="" target="_blank"
+                ><svg class="mobmenu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-social-icons-item">
+              <a class="mobmenu-social-link" href="" target="_blank"
+                ><svg class="mobmenu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  <!-- div mob-menu -->
     </header>
 
 
@@ -342,12 +426,29 @@
           <ul class="portfolio-wrap">
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/banking-app.jpg"
-                  alt="Banking-app screenshots."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                		<!-- Mob and desktop have the same size. -->
+
+                  <source
+                  	srcset="./images/banking-app.jpg 1x, ./images/banking-app2x.jpg 2x"
+                  	media="(min-width: 1158px)"
+                  >
+                  <source
+                  	srcset="./images/banking-app-tab.jpg 1x, ./images/banking-app-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  >
+                  <source
+                  	srcset="./images/banking-app.jpg 1x, ./images/banking-app2x.jpg 2x"
+                  	media="(min-width: 320px)"
+                  >
+
+                  <img
+                    src="./images/banking-app.jpg"
+                    alt="Banking-app screenshots."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -361,12 +462,28 @@
             </li>
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/cashlesspay.jpg"
-                  alt="Smartphone near paymant terminal."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                	<!-- Mob and desktop have the same size. -->
+
+                  <source
+                  	srcset=""./images/cashlesspay.jpg 1x, ./images/cashlesspay2x.jpg 2x""
+                  	media="(min-width: 1158px)"
+                  >
+                  <source
+                  	srcset="./images/cashlesspay-tab.jpg 1x, ./images/cashlesspay-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  >
+                  <source
+                  	srcset=""./images/cashlesspay.jpg 1x, ./images/cashlesspay2x.jpg 2x""
+                  	media="(min-width: 320px)"
+                  >
+                  <img
+                    src="./images/cashlesspay.jpg"
+                    alt="Smartphone near paymant terminal."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -380,12 +497,28 @@
             </li>
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/maditationApp.jpg"
-                  alt="Laptop and Smartphone."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <!-- Mob and desktop have the same size. -->
+
+                  <source
+                  	srcset="./images/maditationApp.jpg 1x, ./images/maditationApp2x.jpg 2x"
+                  	media="(min-width:1158px)"
+                  >
+                  <source
+                  	srcset="./images/maditationApp-tab.jpg 1x, ./images/maditationApp-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  >
+                  <source
+                  	srcset="./images/maditationApp.jpg 1x, ./images/maditationApp2x.jpg 2x"
+                  	media="(min-width: 320px)"
+                  >
+                  <img
+                    src="./images/maditationApp.jpg"
+                    alt="Laptop and Smartphone."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -399,12 +532,28 @@
             </li>
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/taxiservice.jpg"
-                  alt="Car driving panel."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <!-- Mob and desktop have the same size. -->
+
+                  <source
+                  	srcset="./images/taxiservice.jpg 1x, ./images/taxiservice2x.jpg 2x"
+                  	media="(min-width: 1158px)"
+                  />
+                  <source
+                  	srcset="./images/taxiservice-tab.jpg 1x, ./images/taxiservice-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  />
+                  <source
+                  	srcset="./images/taxiservice.jpg 1x, ./images/taxiservice2x.jpg 2x"
+                  	media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/taxiservice.jpg"
+                    alt="Car driving panel."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -418,12 +567,28 @@
             </li>
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/screenIllustrations.jpg"
-                  alt="Smartphone and 4 diferent home screens at the right."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <!-- Mob and desktop have the same size. -->
+
+                  <source
+                  	srcset="./images/screenIllustrations.jpg 1x, ./images/screenIllustrations2x.jpg 2x"
+                  	media="(min-width: 1158px)"
+                  >
+                  <source
+                  	srcset="./images/screenIllustrations-tab.jpg 1x, ./images/screenIllustrations-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  >
+                  <source
+                  	srcset="./images/screenIllustrations.jpg 1x, ./images/screenIllustrations2x.jpg 2x"
+                  	media="(min-width: 320px)"
+                  >
+                  <img
+                    src="./images/screenIllustrations.jpg"
+                    alt="Smartphone and 4 diferent home screens at the right."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -437,12 +602,28 @@
             </li>
             <li class="portfolio-wrap-item">
               <div class="portfolio-wrap-overlay">
-                <img
-                  src="./images/onlinecourses.jpg"
-                  alt="A girl hearing music on her smartphone."
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                   <!-- Mob and desktop have the same size. -->
+
+                   <source
+                  	srcset="./images/onlinecourses.jpg 1x, ./images/onlinecourses2x.jpg 2x"
+                  	media="(min-width: 1158px)"
+                  >
+                  <source
+                  	srcset="./images/onlinecourses-tab.jpg 1x, ./images/onlinecourses-tab2x.jpg 2x"
+                  	media="(min-width: 768px)"
+                  >
+                  <source
+                  	srcset="./images/onlinecourses.jpg 1x, ./images/onlinecourses2x.jpg 2x"
+                  	media="(min-width: 320px)"
+                  >
+                  <img
+                    src="./images/onlinecourses.jpg"
+                    alt="A girl hearing music on her smartphone."
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App

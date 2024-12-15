@@ -85,7 +85,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /*margin-right: 76px;*/
+  width: 115px;
+  height: 24px;
 }
 
 .logo .logo-studio {
@@ -94,6 +96,9 @@ img {
 
 .header-wrap {
   display: flex;
+  width: 320px;
+  height: 56px;
+  padding: 16px 16px;
 }
 
 .navigation {
@@ -103,7 +108,8 @@ img {
 }
 
 .navigation-links {
-  display: flex;
+  /*display: flex;*/
+  display: none;
   gap: 40px;
   justify-content: flex-start;
   align-items: flex-start;
@@ -149,7 +155,8 @@ img {
 }
 
 .addr-items {
-  display: flex;
+  /*display: flex;*/
+  display: none;
   gap: 40px;
   justify-content: left;
   padding: 24px 0;
@@ -165,6 +172,124 @@ img {
 .contacts-links:focus {
   color: #404bbf;
 }
+
+.header-menu-btn {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	background: #fff;
+  	cursor: pointer;
+  	border: none;
+}
+
+.header-menu-icon {
+
+}
+
+.mob-menu {
+	position: fixed;
+	top: 0;
+	background: #fff;
+	width: 100vw;
+	height: 100vh;
+	padding: 24px 24px 40px 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	pacity: 0;
+	  visibility: hidden;
+ 	 pointer-events: none;
+}
+
+.mob-menu-btn {
+	border-radius: 100%;
+	fill: #e7e9fc;
+	stroke-width: 1px;
+	stroke: #2e2f42;
+	cursor: pointer;
+	display: flex;
+  	justify-content: center;
+ 	 align-items: center;
+  	background: #fff;
+  	margin-left: auto;
+  	margin-bottom: 24px;
+}
+
+.mob-menu-icon {
+	fill: #2e2f42;
+}
+
+.mobmenu-navigation-links {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 40px;
+	width: 151px;
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+.mobmenu-navigation-link {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	etter-spacing: 0.02em;
+	color: #2e2f42;
+}
+
+.mobmenu-studio-link {
+	color: #404bbf;
+}
+
+.mobmenu-addr-items {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 24px;
+	width: 193px;
+	height: 72px;
+	margin-bottom: 48px;
+}
+
+.mobmenu-contacts-links {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #434455;
+}
+
+.mobmenu-mail-link {
+	color: #4d5ae5;
+}
+
+.mobmenu-social-icons {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 40px;
+	width: 280px;
+	height: 40px;
+}
+
+.mobmenu-social-icons-item {
+	width: 40px;
+	height: 40px;
+}
+
+.mobmenu-social-link {
+	width: 40px;
+ 	 height: 40px;
+ 	 background-color: #4d5ae5;
+ 	 border-radius: 50%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
 
 /* Hero */
 
@@ -195,6 +320,8 @@ img {
    			 url(../images/hero-image-mob2x.jpg);
    	}
 }
+
+
 
 .title {
   /*font-size: 56px;*/
