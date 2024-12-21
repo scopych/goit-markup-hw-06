@@ -58,8 +58,8 @@ img {
   /*width: 1158px;*/
   width: 320px;
   margin: 0 auto;
-  /*padding-left: 15px;
-  padding-right: 15px;*/
+  /*padding-left: 16px;
+  padding-right: 16px;*/
 }
 
 .advantages-container,
@@ -196,7 +196,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	pacity: 0;
+	opacity: 0;
 	  visibility: hidden;
  	 pointer-events: none;
 }
@@ -505,7 +505,7 @@ advantages-item-icon {
 .portfolio-subtitle {
   margin-bottom: 8px;
 }
-					replaced by gap. */
+				/*	replaced by gap. */
 
 .team-subtitle {
   text-align: center;
@@ -1009,3 +1009,53 @@ opacity: 0.6;
 .modal-send-btn:hover {
   background-color: #404bbf;
 }
+
+
+                                                               /* Tablet */
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+
+	.header-wrap {
+		width: 768px;
+  		height: 72px;
+  	}
+
+  	.navigation {
+  		 gap: 120px;
+  	}
+
+  	.navigation-links {
+		display: flex;
+	}
+
+	.addr {
+
+	}
+
+	.addr-items {
+		display: flex;
+	}
+
+	.header-menu-btn {
+		display: none;
+	}
+
+	.addr-items {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		justify-content: center;
+		align-items: center;
+		padding: 0 0;
+	}
+
+	.contacts-links {
+		font-size: 12px;
+		letter-spacing: 0.04em;
+		line-height: 1.16;
+		display: block;
+		height: 14px;
+	}
