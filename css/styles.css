@@ -391,10 +391,6 @@ img {
   flex-direction: column;
 }
 
-.team-wrap {
-  align-items: center;
-  justify-content: center;
-}
 
 .portfolio-wrap {
   display: flex;
@@ -505,7 +501,7 @@ advantages-item-icon {
 .portfolio-subtitle {
   margin-bottom: 8px;
 }
-				/*	replaced by gap. */
+					replaced by gap. */
 
 .team-subtitle {
   text-align: center;
@@ -523,10 +519,10 @@ advantages-item-icon {
   width: 288px;
   height: 120px;
   display: flex;
-align-items: flex-start;
-justify-content: center;
-flex-direction: column;
-gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .team-card {
@@ -1097,3 +1093,95 @@ opacity: 0.6;
 	.modal-link {
 		margin-left: 4px;
 	}
+
+	.hero {
+  		width: 768px;
+  		padding: 112px 0;
+  		background-image: linear-gradient(
+      		rgba(46, 47, 66, 0.7),
+      		rgba(46, 47, 66, 0.7)
+   		 ),
+    		url(../images/hero-image-tab.jpg);
+  	}
+
+  	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(
+     	 			rgba(46, 47, 66, 0.7),
+     				 rgba(46, 47, 66, 0.7)
+    				),
+   			 	url(../images/hero-image-tab2x.jpg);
+   		}
+   	}
+
+   	.title {
+  		font-size: 56px;
+  		line-height: 1.07;
+  		max-width: 496px;
+  		margin-bottom: 48px;
+  	}
+
+  	.advantages-wrap {
+		gap: 24px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.advantages-item {
+		width: calc((100% - 32px) / 2);
+	}
+
+	.advantages-subtitle {
+		margin: 0;
+	}
+
+	.team-wrap {
+  		display: grid;
+  		grid-template-columns: repeat(2, 264px); /* 2 cards per row */
+  		row-gap: 64px;
+  		column-gap: 24px;
+		justify-content: center;
+  	}
+
+  	.team-card {
+  		width: 264px;
+  	}
+
+  	.team-section {
+
+  	}
+
+  	.portfolio-wrap {
+  		display: grid;
+  		grid-template-columns: repeat(2, 356px);
+  		row-gap: 72px;
+  		column-gap: 24px;
+		justify-content: center;
+	}
+
+	.portfolio-title {
+		margin-bottom: 72px;
+	}
+
+
+
+
+	.portfolio-wrap-overlay img {
+		width: 356px;
+		height: 300px;
+	}
+
+	.portfolio-card-footer {
+		width: 356px;
+	}
+}
+
+}
+
+	                                   /* Desktop */
+
+@media screen and (min-width: 1158px) {
+	.container {
+		width: 1158px;
+	}
+}
