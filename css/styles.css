@@ -634,6 +634,10 @@ advantages-item-icon {
 	gap: 72px;
 }
 
+.footer-logo-and-social {
+
+}
+
 .footer-logo-block,
 .footer-social,
 .footer-subscribe,
@@ -1174,9 +1178,48 @@ opacity: 0.6;
 	.portfolio-card-footer {
 		width: 356px;
 	}
+
+	.footer {
+		width: 768px;
+	}
+
+	.footer-container {
+		padding-left: 108px;
+	}
+
+	.footer-logo-and-social {
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	.footer-logo-block {
+		width: 264px;
+	}
+
+	.footer-logo-block,
+	.footer-social,
+	.footer-subscribe,
+	.footer-subscribe-form {
+		 align-items: start;
+	}
+
+	.footer-social {
+		margin: 0;
+	}
+
+	.footer-subscribe-form {
+		display: flex;
+		flex-direction: row;
+  		gap: 24px;
+  	}
+
+  	.footer-email-input {
+  		width: 264px;
+  	}
 }
 
-}
+
 
 	                                   /* Desktop */
 
