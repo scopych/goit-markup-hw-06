@@ -52,6 +52,7 @@ img {
   padding-bottom: 120px;*/
   padding-top: 96px;
   padding-bottom: 96px;
+  margin: 0 auto;
 }
 
 .container {
@@ -386,8 +387,8 @@ img {
   display: flex;
   /*gap: 24px;*/
   gap: 72px;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -615,7 +616,6 @@ advantages-item-icon {
 
 .footer {
   background-color: #2e2f42;
-  /*padding: 100px 0;*/
   width: 320px;
   margin: 0 auto;
 }
@@ -1224,7 +1224,140 @@ opacity: 0.6;
 	                                   /* Desktop */
 
 @media screen and (min-width: 1158px) {
+	.section {
+  		padding-top: 120px;
+  		padding-bottom: 120px;
+  		width: 1158px;
+  	}
+
 	.container {
 		width: 1158px;
 	}
+
+	.advantages-container,
+	.portfolio-container,
+	.footer-container {
+  		padding-left: 16px;
+  		padding-right: 16px;
+	}
+
+	.logo {
+		margin-right: auto;
+	}
+
+	.header-wrap {
+		display: flex;
+  		width: 1158px;
+ 		padding: 24px 100px;
+	}
+
+	.navigation {
+  		 gap: 76px;
+  	}
+
+  	.addr {
+  		margin: 0 0 0 auto;
+	}
+
+	.addr-items {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	.contacts-links {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.02em;
+	}
+
+	.hero {
+  		width: 1158px;
+  		padding: 188px 0;
+  		background-image: linear-gradient(
+      		rgba(46, 47, 66, 0.7),
+      		rgba(46, 47, 66, 0.7)
+   		 ),
+    		url(../images/hero-img.jpg);
+  	}
+
+  	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(
+     	 			rgba(46, 47, 66, 0.7),
+     				 rgba(46, 47, 66, 0.7)
+    				),
+   			 	url(../images/hero-img2x.jpg);
+   		}
+   	}
+
+   	.advantages-wrap {
+   		flex-wrap: nowrap;
+   	}
+
+   	.advantages-item {
+   		width: 264px;
+   	}
+
+   	.advantages-item-wrap {
+   		display: flex;
+   	}
+
+   	.advantages-subtitle {
+   		font-weight: 500;
+   		font-size: 20px;
+   		line-height: 1.2;
+   	}
+
+   	.advantages-text {
+   		font-weight: 400;
+   	}
+
+   	.team-wrap {
+   		display: flex;
+   		gap: 24px;
+   		align-items: center;
+  		justify-content: center;
+  		flex-direction: row;
+   	}
+
+   	.portfolio-wrap {
+  		display: grid;
+  		grid-template-columns: repeat(3, 360px);
+  		column-gap: 24px;
+  		row-gap: 48px;
+  	}
+
+  	.portfolio-wrap-overlay img {
+		width: 360px;
+	}
+
+	.portfolio-card-footer {
+		width: 360px;
+	}
+
+	.footer {
+		width: 1158px;
+	}
+
+	.footer-container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		flex-direction: row;
+		gap: 80px;
+	}
+
+	.footer-logo-and-social {
+		margin: 0 auto;
+		gap: 120px;
+	}
+
+	.footer-logo-block {
+		margin: 0 auto;
+	}
+
+	.footer-subscribe {
+		justify-content: normal;
+	}
+
 }
