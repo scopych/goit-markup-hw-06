@@ -968,10 +968,11 @@ advantages-item-icon {
   fill: #f4f4fd;
 }
 
-.modal-label-text {
+/*.modal-label-text {
   display: flex;
   flex-direction: column;
 }
+*/
 
 .modal-link {
   line-height: 1.33;
